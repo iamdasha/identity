@@ -1,0 +1,13 @@
+@import "reset.css";
+@font-face {
+  font-family: "PP Pangram Sans";
+	src: url("../fonts/PPPangramSans-Semibold.otf") format("otf");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+  font-family: "PP Pangram Sans";
+	src: url("../fonts/PPPangramSans-Medium.otf") format("otf");
+	font-weight: medium;
+	font-style: normal;
+}
