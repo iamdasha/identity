@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Flava</title>
+    <style media="screen">
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #111112;
+      font-family: "PP Pangram Sans";
+    }
+
+    section {
+      padding: 5.5vw 0;
+    }
+
+    h1, h2, p {
+      color: #F2F2F2;
+    }
+
+    h1 {
+      font-size: 6vw;
+      font-weight: 500;
+      margin-bottom: 5vw;
+    }
+
+    h2 {
+      font-size: 3vw;
+      margin-bottom: 1.8vw;
+      margin-top: 8vw;
+
+    }
+
+    p {
+      font-size: 1.52vw;
+      line-height: 117%;
+    }
+
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 1vw;
+      margin: 0 3vw;
+    }
+
+    .menu {
+      grid-column: 1 / 3;
+      grid-row: 1 / 30;
+      padding: 0;
+    }
+
+    .menu ul {
+      position: sticky;
+      top: 14vw;
+      font-size: 1.52vw;
+    }
+
+    .menu li {
+      margin-bottom: .8vw;
+    }
+
+    .menu a {
+      color: #FC62FF;
+      text-decoration: none;
+    }
+
+    /* .header {
+      grid-column: 3 / 13;
+      height: 100vh;
+      background-image: url(images/logo.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    } */
+
+    .header {
+      grid-column: 3 / 13;
+      padding: 14vw 0;
+    }
+
+    .header h2 {
+      margin: 0;
+    }
+
+    .logo {
+      width: 100%;
+      margin-top: 2vw;
+    }
+
+    .about {
+      grid-area: 2/3/3/11;
+    }
+
+    .about .concept {
+      margin-top: 0;
+    }
+
+    /* .about p {
+      max-width: 39vw;
+    } */
+
+    .concept + p {
+      max-width: 39vw;
+    }
+
+    .personality {
+      font-size: 3vw;
+      font-weight: 500;
+      color: white;
+      margin-top: 5.5vw;
+    }
+
+    .first_row {
+      display: flex;
+      justify-content: space-between;
+      width: 46vw;
+      margin-bottom: 1.5vw;
+    }
+
+    .second_row {
+      display: flex;
+      justify-content: space-between;
+      width: 39vw;
+      margin-bottom: 1.5vw;
+    }
+
+    .third_row {
+      display: flex;
+      justify-content: space-between;
+      width: 58vw;
+    }
+
+    .values ~ p {
+      max-width: 26vw;
+      margin-bottom: 1.3vw;
+    }
+
+    .mission + p {
+      max-width: 30vw;
+    }
+
+    .identity + p {
+      max-width: 42vw;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="menu">
+        <ul>
+          <li>
+            <a href="#">О бренде</a>
+          </li>
+          <li>
+            <a href="#">Логотип</a>
+          </li>
+          <li>
+            <a href="#">Цвета</a>
+          </li>
+          <li>
+            <a href="#">Типографика</a>
+          </li>
+          <li>
+            <a href="#">Сетка</a>
+          </li>
+          <li>
+            <a href="#">Композиция</a>
+          </li>
+          <li>
+            <a href="#">Фотографии</a>
+          </li>
+          <li>
+            <a href="#">Графика</a>
+          </li>
+          <li>
+            <a href="#">Tone of voice</a>
+          </li>
+          <li>
+            <a href="#">Носители</a>
+          </li>
+        </ul>
+      </section>
+      <section class="header">
+        <h2>Стайлгайд</h2>
+        <img class="logo" src="images/logo.svg" alt="">
+      </section>
+      <section class="about">
+      <h1>О&nbsp;бренде</h1>
+      <h2 class="concept" >Концепция</h2>
+      <p>Уникальный медиа-сервис о&nbsp;моде в&nbsp;музыке. Бренд стремится подчеркнуть важную роль визуальной составляющей в&nbsp;музыкальной индустрии, акцентируя внимание на&nbsp;индивидуальности артистов, а&nbsp;также сблизить слушателей с&nbsp;их&nbsp;любимыми исполнителями.</p>
+      <div class="personality">
+        <div class="first_row">
+          <span class="bright" >яркий</span>
+          <span class="fashionable" >модный</span>
+          <span class="active" >активный</span>
+        </div>
+        <div class="second_row">
+          <span class="creattive">творческий</span>
+          <span class="free">свободный</span>
+        </div>
+        <div class="third_row">
+          <span class="experimental">экспериментирующий</span>
+          <span class="influential">влиятельный</span>
+        </div>
+      </div>
+      <h2 class="values">Ценности</h2>
+      <p>Внимание к&nbsp;разнообразию творчества музыкантов и&nbsp;признание их как межпредметных артистов</p>
+      <p>Ценность визуальной культуры как неотъемлемой составляющей музыкальной</p>
+      <p>Уважение интереса пользователей к&nbsp;личности исполнителей</p>
+      <p>Достоверность информации</p>
+      <h2 class="mission">Миссия</h2>
+      <p>Показать ценность визуального в&nbsp;музыке и&nbsp;сделать исполнителей и&nbsp;слушателей ближе друг к&nbsp;другу</p>
+      <h2 class="identity">Айдентика</h2>
+      <p>Метафорой айдентики является звучание образов и&nbsp;стиля одежды музыкальных исполнителей. Ведущий мотив&nbsp;&mdash; взаимодействие графики эквалайзера и&nbsp;фотографий, музыкального и&nbsp;визуального. Главным элементом композиции являются фотографии, поэтому графика и&nbsp;типографика имеют четкую и&nbsp;лаконичную структуру и&nbsp;располагаются по&nbsp;простой сетке, основанной на&nbsp;сетке эквалайзера.</p>
+    </section>
+      <!-- <section class="Logo">
+      <h1>Логотип</h1>
+      <h2>Значение</h2>
+      <div class="meaning"></div>
+    </section>
+      <section class=""></section>
+      <section class=""></section>
+      <section class=""></section>
+      <section class=""></section>
+      <section class=""></section>
+      <section class=""></section>
+      <section class=""></section>
+      <section class=""></section>
+    </div> -->
+  </body>
+</html>
