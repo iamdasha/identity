@@ -2,7 +2,8 @@
 @font-face {
   font-family: 'PP Pangram Sans';
 	src: url('../fonts/PPPangramSans-Semibold.otf');
-	font-weight: bold;
+	font-weight: semibold;
+  font-style: normal;
 }
 @font-face {
   font-family: 'PP Pangram Sans';
