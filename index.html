@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title>Flava</title>
+    <script src="javascripts/jquery-3.5.1.js" charset="utf-8"></script>
+    <script src="javascripts/menu.js" charset="utf-8"></script>
     <style media="screen">
 
     * {
@@ -678,34 +680,34 @@
       <section class="menu">
         <ul>
           <li>
-            <a href="#">О бренде</a>
+            <a href="#about">О бренде</a>
           </li>
           <li>
-            <a href="#">Логотип</a>
+            <a href="#logotype">Логотип</a>
           </li>
           <li>
-            <a href="#">Цвета</a>
+            <a href="#colors">Цвета</a>
           </li>
           <li>
-            <a href="#">Типографика</a>
+            <a href="#typography">Типографика</a>
           </li>
           <li>
-            <a href="#">Сетка</a>
+            <a href="#grid">Сетка</a>
           </li>
           <li>
-            <a href="#">Композиция</a>
+            <a href="#composition">Композиция</a>
           </li>
           <li>
-            <a href="#">Фотографии</a>
+            <a href="#photos">Фотографии</a>
           </li>
           <li>
-            <a href="#">Графика</a>
+            <a href="#graphic">Графика</a>
           </li>
           <li>
-            <a href="#">Tone of voice</a>
+            <a href="#tone">Tone of voice</a>
           </li>
           <li>
-            <a href="#">Носители</a>
+            <a href="#stuff">Носители</a>
           </li>
         </ul>
       </section>
@@ -713,7 +715,7 @@
         <h2>Стайлгайд</h2>
         <img class="logo" src="images/logo.svg" alt="">
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <h1>О&nbsp;бренде</h1>
         <h2 class="concept">Концепция</h2>
         <p>Уникальный медиа-сервис о&nbsp;моде в&nbsp;музыке. Бренд стремится подчеркнуть важную роль визуальной составляющей в&nbsp;музыкальной индустрии, акцентируя внимание на&nbsp;индивидуальности артистов, а&nbsp;также сблизить слушателей с&nbsp;их&nbsp;любимыми исполнителями.</p>
@@ -743,7 +745,7 @@
         <p>Метафорой айдентики является звучание образов и&nbsp;стиля одежды музыкальных исполнителей. Ведущий мотив&nbsp;&mdash; взаимодействие графики эквалайзера и&nbsp;фотографий, музыкального и&nbsp;визуального. Главным элементом композиции являются фотографии, поэтому графика и&nbsp;типографика имеют четкую и&nbsp;лаконичную структуру и&nbsp;располагаются по&nbsp;простой сетке, основанной на&nbsp;сетке эквалайзера.</p>
       </section>
 
-      <section class="logotype">
+      <section class="logotype" id="logotype">
         <div class="logo_field bg">
           <h1 class="black_txt">Логотип</h1>
           <h2 class="black_txt meaning">Значение</h2>
@@ -789,7 +791,7 @@
           </div>
         </div>
       </section>
-      <section class="colors">
+      <section class="colors" id="colors">
         <h1>Цвета</h1>
         <h2 class="choose">Выбор цветов</h2>
         <p>Цветовая палитра вдохновлена яркими и контрастными цветами эквалайзера.</p>
@@ -815,7 +817,7 @@
         </div>
       </section>
 
-      <section class="typography">
+      <section class="typography" id="typography">
           <h1 class="black_txt">Типографика</h1>
           <div class="fonts illustration">
             <div class="first_block">
@@ -844,7 +846,7 @@
           </div>
       </section>
 
-      <section class="grid">
+      <section class="grid" id="grid">
         <h1>Сетка</h1>
         <h2 class="choose">Построение сетки</h2>
         <div class="table">
@@ -857,7 +859,7 @@
           <img src="images/grid.svg" alt="">
         </div>
       </section>
-      <section>
+      <section id="composition">
         <h1>Композиционные<br>схемы</h1>
         <h2 class="choose">Квадратный формат</h2>
         <p>Допускается масштабирование знака<br>по&nbsp;высоте одной строки.</p>
@@ -886,7 +888,7 @@
         </div>
       </section>
 
-      <section class="photography">
+      <section class="photography" id="photos">
         <h1 class="black_txt">Фотографии</h1>
         <h2 class="black_txt choose">Композиция и сюжеты</h2>
         <p class="black_txt">Фотографии на&nbsp;носителях изображают музыкантов и&nbsp;демонстрируют их&nbsp;одежду. На&nbsp;каждом фото должен быть изображен только один артист. Это обусловлено концепцией бренда: внимание в&nbsp;индивидуальности каждого музыканта.</p>
@@ -923,7 +925,7 @@
           <img id="ph8" src="images/ph8.png" alt="">
         </div>
       </section>
-      <section class="graphic">
+      <section class="graphic" id="graphic">
         <h1>Графика</h1>
         <h2 class="choose">Смысл</h2>
         <p>Ведущим образом проекта является эквалайзер&nbsp;&mdash; символ музыки и&nbsp;звука. Наложение эквалайзера на&nbsp;фото&nbsp;&mdash; метафора &laquo;музыка звучит там, где появляется образ артиста&raquo;, передающая ценность визуальной состовляющей музыки.</p>
@@ -956,13 +958,13 @@
         <p class="prgrf">4. Отрегулируйте оттенок цвета эквалайзера и&nbsp;прозрачность группы. Для фотографий, гда на&nbsp;артисте не&nbsp;яркая одежда, подберите более яркий цвет эквалайзера, подходящий под тон фото.</p>
         <img class="gr illustration"src="images/photo_gr3.png" alt="">
       </section>
-      <section class="tone">
+      <section class="tone" id="tone">
         <h1 class="black_txt">Tone of voice</h1>
         <p class="black_txt space">Наш бренд создан как для простых слушателей и&nbsp;фанатов, так и&nbsp;для специалистов в&nbsp;области моды и&nbsp;стиля, поэтому нам важно быть полезными и&nbsp;понятными для разной аудитории.</p>
         <p class="black_txt space">Мы&nbsp;стремимся заинтересовать приходящих за&nbsp;вдохновением и&nbsp;погрузить их&nbsp;в&nbsp;мир визуальных образов исполнителей, используем простой и&nbsp;современный язык, побудительные глаголы (узнай, посмотри, почувствуй), которые сближают с&nbsp;артистами.</p>
         <p class="black_txt space">Используем вопросительные заголовки, обращаясь к&nbsp;профессиональной части аудитории, чтобы подчеркнуть содержательность контента.</p>
       </section>
-      <section>
+      <section id="stuff">
         <h1>Носители</h1>
       </section>
 
