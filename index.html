@@ -16,50 +16,55 @@
     }
 
     section {
-      padding: 5.5vw 0;
+      padding-bottom: 8vw;
     }
 
     h1, h2, p {
       color: #F2F2F2;
+      margin-left: 19vw;
     }
 
     h1 {
       font-size: 6vw;
       font-weight: 500;
       margin-bottom: 5vw;
+      padding-top: 8vw;
     }
 
     h2 {
       font-size: 3vw;
       margin-bottom: 1.8vw;
-      margin-top: 8vw;
+      margin-top: 12vw;
+      line-height: 113%;
 
     }
 
     p {
       font-size: 1.52vw;
-      line-height: 117%;
+      line-height: 137%;
     }
 
-    .container {
-      display: grid;
-      height: 100vh;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: auto;
-      grid-column-gap: 1vw;
-      margin: 0 3vw;
-    }
+    /* Меню */
 
     .menu {
-      grid-column: 1 / 3;
-      grid-row: 1 / 30;
-      padding: 0;
+      position: fixed;
+      margin-top: 14vw;
+      padding: 0 0 0 3vw;
+      z-index: 20;
     }
 
     .menu ul {
-      position: sticky;
-      top: 14vw;
       font-size: 1.52vw;
+      opacity: .5;
+    }
+
+    .menu ul:hover {
+      opacity: 1;
+      transition: .4s ease;
+    }
+
+    .menu ul:not(:hover) {
+      transition: .7s ease;
     }
 
     .menu li {
@@ -71,18 +76,17 @@
       text-decoration: none;
     }
 
-    /* .header {
-      grid-column: 3 / 13;
-      height: 100vh;
-      background-image: url(images/logo.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-    } */
+    .menu a:hover {
+      opacity: .5;
+    }
+
+
+    /* Первый экран */
 
     .header {
-      grid-column: 3 / 13;
-      padding: 14vw 0;
+      grid-row: 1/2;
+      grid-column: 2/3;
+      padding: 14vw 7vw 14vw 19vw;
     }
 
     .header h2 {
@@ -94,20 +98,19 @@
       margin-top: 2vw;
     }
 
+
+    /* О бренде */
+
     .about {
-      grid-area: 2/3/3/11;
+      grid-area: 2/2/3/3;
     }
 
     .about .concept {
       margin-top: 0;
     }
 
-    /* .about p {
-      max-width: 39vw;
-    } */
-
     .concept + p {
-      max-width: 39vw;
+      max-width: 41vw;
     }
 
     .personality {
@@ -115,26 +118,62 @@
       font-weight: 500;
       color: white;
       margin-top: 5.5vw;
+      user-select: none;
     }
 
-    .first_row {
+    .personality .first_row {
       display: flex;
       justify-content: space-between;
       width: 46vw;
       margin-bottom: 1.5vw;
     }
 
-    .second_row {
+    .personality .second_row {
       display: flex;
       justify-content: space-between;
       width: 39vw;
       margin-bottom: 1.5vw;
     }
 
-    .third_row {
+    .personality .third_row {
       display: flex;
       justify-content: space-between;
       width: 58vw;
+    }
+
+    .bright:hover {
+      color: #EBFF00 ;
+      transition: .7s ease;
+    }
+
+    .free:hover {
+      color: #EBFF00 ;
+      transition: .7s ease;
+    }
+
+    .fashionable:hover {
+      color: #FC62FF ;
+      transition: .7s ease;
+    }
+
+    .experimental:hover {
+      color: #FC62FF ;
+      transition: .7s ease;
+    }
+
+    .active:hover {
+      color: #33FEB4 ;
+      transition: .7s ease;
+    }
+
+    .creattive:hover {
+      color: #33FEB4 ;
+      transition: .7s ease;
+    }
+
+    .influential:hover {
+      color: #33FEB4 ;
+      transition: .7s ease;
     }
 
     .values ~ p {
@@ -149,6 +188,295 @@
     .identity + p {
       max-width: 42vw;
     }
+
+
+    /* Логотип */
+
+    .logotype {
+      padding-top: 0;
+      z-index: 10;
+      padding-bottom: 0vw;
+    }
+
+    .logo_field {
+      background-color: #F2F2F2;
+    }
+
+    .logotype .meaning {
+      margin-top: 0;
+    }
+
+    .bg {
+      background-color: #F2F2F2;
+      padding-bottom: 5vw;
+
+    }
+
+    .meaning_table {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      grid-row-gap: 2vw;
+    }
+
+    .meaning_table p {
+      margin-left: 0;
+    }
+
+    /* .bold, .lines, .arrow, .symbol, .trust {
+      display: inline-block;
+    } */
+
+
+    .first_line {
+      margin-bottom: 2vw;
+    }
+
+    .arrow {
+      width: 10vw;
+      justify-self: center;
+    }
+
+    .trust, .symbol {
+      max-width: 26vw;
+    }
+
+    .logo_about {
+      width: 81vw;
+      margin-top: 8vw;
+    }
+
+    p.build, p.usage {
+      max-width: 30vw;
+    }
+
+    .black_txt {
+      color: #111112;
+    }
+
+    .build_schema, .field {
+      width: 50%;
+      margin-top: 8vw;
+      margin-left: 16vw;
+    }
+
+    .logo_use {
+      margin-bottom: 5vw;
+    }
+
+    .logo_use_1 {
+      width: 23vw;
+      margin-top: 8vw;
+      margin-right: 5vw;
+    }
+
+    .logo_use_2 {
+      width: 14vw;
+      margin-right: 5vw;
+    }
+
+    .logo_use_3 {
+      width: 8vw;
+    }
+
+    .sign_bg {
+      grid-area: 5/1/6/3;
+      height: 117vw;
+      background-color: #F2F2F2;
+    }
+
+    .sign {
+      max-width: 32vw;
+    }
+
+  .sign_1 {
+    width: 15vw;
+    margin-top: 8vw;
+    margin-right: 7vw;
+    margin-left: 19vw;
+  }
+
+  .sign_2 {
+    width: 8vw;
+  }
+
+  .wrong_use {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .wrong_use_txt {
+    color: #FC62FF;
+    margin-left: 0;
+  }
+
+  .wrong_use_pic {
+    width: 24vw;
+  }
+
+  /* Цвета */
+
+  .choose {
+    margin-top: 0;
+  }
+
+  .palette {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8vw;
+    column-gap: 1vw;
+  }
+
+  .palette img {
+    max-width: 38vw;
+  }
+
+  .illustration {
+    margin-left: 19vw;
+    padding-right: 3vw;
+  }
+
+  .topper {
+    padding-top: 5vw;
+    margin-top: 0;
+  }
+
+  .colors p {
+    max-width: 24vw;
+  }
+
+  .right_colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    margin-top: 8vw;
+  }
+
+  .right_colors img {
+    width: 38vw;
+  }
+
+  .wrong_colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    margin-top: 8vw;
+    width: 62vw;
+  }
+
+  .wrong_colors img {
+    width: 27vw;
+  }
+
+  /* Типографика */
+
+  .typography {
+    background-color: #F2F2F2;
+  }
+
+  .fonts h2 {
+    color: #111112;
+    margin-left: 0;
+  }
+
+  .fonts p {
+    color: #111112;
+    margin-left: 0;
+  }
+
+  .fonts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3vw;
+  }
+
+  .about_font, .alphabet {
+    max-width: 27vw;
+  }
+
+  .alphabet {
+    margin-top: 1.8vw;
+  }
+
+  .third_block {
+    grid-column-start: 2;
+  }
+
+  .first_block h2 {
+    margin-top: 0;
+  }
+
+  .second_block h2 {
+    margin-top: 0;
+  }
+
+  .third_block h2 {
+    margin-top: 0;
+  }
+
+  .sizes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sizes h2 {
+    margin-top: 0;
+  }
+
+  .size {
+    margin-bottom: 0;
+  }
+
+  /* Сетка */
+
+  .table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .table img {
+    width: 38vw;
+    margin-left: 8vw;
+    align-self: center;
+  }
+
+  .about_grid p {
+    max-width: 31vw;
+  }
+
+  .space {
+    margin-bottom: 2vw;
+  }
+
+  .squares {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vw;
+  }
+
+  .squares img {
+    width: 25vw;
+  }
+
+  .verticals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 22vw;
+    margin-top: 8vw;
+    row-gap: 3vw;
+  }
+
+  .verticals img {
+    width: 26vw;
+  }
 
     </style>
   </head>
@@ -193,47 +521,173 @@
         <img class="logo" src="images/logo.svg" alt="">
       </section>
       <section class="about">
-      <h1>О&nbsp;бренде</h1>
-      <h2 class="concept" >Концепция</h2>
-      <p>Уникальный медиа-сервис о&nbsp;моде в&nbsp;музыке. Бренд стремится подчеркнуть важную роль визуальной составляющей в&nbsp;музыкальной индустрии, акцентируя внимание на&nbsp;индивидуальности артистов, а&nbsp;также сблизить слушателей с&nbsp;их&nbsp;любимыми исполнителями.</p>
-      <div class="personality">
-        <div class="first_row">
-          <span class="bright" >яркий</span>
-          <span class="fashionable" >модный</span>
-          <span class="active" >активный</span>
+        <h1>О&nbsp;бренде</h1>
+        <h2 class="concept">Концепция</h2>
+        <p>Уникальный медиа-сервис о&nbsp;моде в&nbsp;музыке. Бренд стремится подчеркнуть важную роль визуальной составляющей в&nbsp;музыкальной индустрии, акцентируя внимание на&nbsp;индивидуальности артистов, а&nbsp;также сблизить слушателей с&nbsp;их&nbsp;любимыми исполнителями.</p>
+        <div class="personality illustration">
+          <div class="first_row">
+            <span class="bright" >яркий</span>
+            <span class="fashionable" >модный</span>
+            <span class="active" >активный</span>
+          </div>
+          <div class="second_row">
+            <span class="creattive">творческий</span>
+            <span class="free">свободный</span>
+          </div>
+          <div class="third_row">
+            <span class="experimental">экспериментирующий</span>
+            <span class="influential">влиятельный</span>
+          </div>
         </div>
-        <div class="second_row">
-          <span class="creattive">творческий</span>
-          <span class="free">свободный</span>
+        <h2 class="values">Ценности</h2>
+        <p>Внимание к&nbsp;разнообразию творчества музыкантов и&nbsp;признание их как межпредметных артистов</p>
+        <p>Ценность визуальной культуры как неотъемлемой составляющей музыкальной</p>
+        <p>Уважение интереса пользователей к&nbsp;личности исполнителей</p>
+        <p>Достоверность информации</p>
+        <h2 class="mission">Миссия</h2>
+        <p>Показать ценность визуального в&nbsp;музыке и&nbsp;сделать исполнителей и&nbsp;слушателей ближе друг к&nbsp;другу</p>
+        <h2 class="identity">Айдентика</h2>
+        <p>Метафорой айдентики является звучание образов и&nbsp;стиля одежды музыкальных исполнителей. Ведущий мотив&nbsp;&mdash; взаимодействие графики эквалайзера и&nbsp;фотографий, музыкального и&nbsp;визуального. Главным элементом композиции являются фотографии, поэтому графика и&nbsp;типографика имеют четкую и&nbsp;лаконичную структуру и&nbsp;располагаются по&nbsp;простой сетке, основанной на&nbsp;сетке эквалайзера.</p>
+      </section>
+      <!-- <div class="bg"></div>
+      <div class="sign_bg"></div> -->
+      <section class="logotype">
+        <div class="logo_field bg">
+          <h1 class="black_txt">Логотип</h1>
+          <h2 class="black_txt meaning">Значение</h2>
+          <div class="meaning_table illustration">
+            <p class="black_txt bold">Болдовое начертание и&nbsp;строгая геометрия</p>
+            <img class="arrow" src="images/Arrow 1.svg" alt="">
+            <p class="black_txt trust">Надёжность бренда, влиятельность и&nbsp;масштабность музыкальной индустрии</p>
+            <p class="black_txt lines" >Вертикальные линии в&nbsp;начале</p>
+            <img class="arrow" src="images/Arrow 1.svg" alt="">
+            <p class="black_txt symbol">Символ звука и&nbsp;движения, динамичность и&nbsp;прогрессивность бренда, связь с&nbsp;музыкой</p>
+          </div>
+          <img class="logo_about illustration" src="images/logo_black.svg" alt="">
         </div>
-        <div class="third_row">
-          <span class="experimental">экспериментирующий</span>
-          <span class="influential">влиятельный</span>
+
+        <h2 class="topper">Построение и&nbsp;механика</h2>
+        <p class="build">Ширина линий в&nbsp;начале логотипа увеличивается, а&nbsp;расстояние между ними уменьшается. Расстояние между буквами одинаковое, наклоны элементов букв совпадают.</p>
+        <img class="build_schema" src="images/build.svg" alt="">
+        <h2 class="">Охранное поле</h2>
+        <img class="field" src="images/field.svg" alt="">
+        <h2>Использование</h2>
+        <p class="usage">Используется во&nbsp;всех носителях. Всегда занимает 1&nbsp;колонку. Может выполнять роль графики и&nbsp;занимать 4&nbsp;колонки в&nbsp;мелких печатных и&nbsp;веб&mdash;носителях. Минимальный размер &mdash;</p>
+        <div class="logo_use illustration">
+          <img class="logo_use_1" src="images/logo.svg" alt="">
+          <img class="logo_use_2" src="images/logo.svg" alt="">
+          <img class="logo_use_3" src="images/logo.svg" alt="">
         </div>
-      </div>
-      <h2 class="values">Ценности</h2>
-      <p>Внимание к&nbsp;разнообразию творчества музыкантов и&nbsp;признание их как межпредметных артистов</p>
-      <p>Ценность визуальной культуры как неотъемлемой составляющей музыкальной</p>
-      <p>Уважение интереса пользователей к&nbsp;личности исполнителей</p>
-      <p>Достоверность информации</p>
-      <h2 class="mission">Миссия</h2>
-      <p>Показать ценность визуального в&nbsp;музыке и&nbsp;сделать исполнителей и&nbsp;слушателей ближе друг к&nbsp;другу</p>
-      <h2 class="identity">Айдентика</h2>
-      <p>Метафорой айдентики является звучание образов и&nbsp;стиля одежды музыкальных исполнителей. Ведущий мотив&nbsp;&mdash; взаимодействие графики эквалайзера и&nbsp;фотографий, музыкального и&nbsp;визуального. Главным элементом композиции являются фотографии, поэтому графика и&nbsp;типографика имеют четкую и&nbsp;лаконичную структуру и&nbsp;располагаются по&nbsp;простой сетке, основанной на&nbsp;сетке эквалайзера.</p>
-    </section>
-      <!-- <section class="Logo">
-      <h1>Логотип</h1>
-      <h2>Значение</h2>
-      <div class="meaning"></div>
-    </section>
-      <section class=""></section>
-      <section class=""></section>
-      <section class=""></section>
-      <section class=""></section>
-      <section class=""></section>
-      <section class=""></section>
-      <section class=""></section>
-      <section class=""></section>
-    </div> -->
+
+        <div class="sign_field bg">
+          <h2 class="black_txt topper">Знак</h2>
+          <p class="black_txt sign">Используется отдельно от&nbsp;текстового блока, если носитель не&nbsp;вмещает логотип, и&nbsp;в&nbsp;мерче. Допускается масштабирование знака по&nbsp;высоте одной строки.</p>
+          <img class="sign_1" src="images/sign.svg" alt="">
+          <img class="sign_2" src="images/sign.svg" alt="">
+          <h2 class="black_txt">Неправильное использвание</h2>
+          <div class="wrong_use illustration">
+            <img class="wrong_use_pic" src="images/extnd.svg" alt="">
+            <p class="wrong_use_txt">Искажение пропорций</p>
+            <img class="wrong_use_pic" src="images/rotate.svg" alt="">
+            <p class="wrong_use_txt">Вращение</p>
+            <img class="wrong_use_pic" src="images/mask.png" alt="">
+            <p class="wrong_use_txt">Использование в&nbsp;качестве контейнера для фото</p>
+            <img class="wrong_use_pic" src="images/graphik.svg" alt="">
+            <p class="wrong_use_txt">Добавление дополнительной графики</p>
+          </div>
+        </div>
+      </section>
+      <section class="colors">
+        <h1>Цвета</h1>
+        <h2 class="choose">Выбор цветов</h2>
+        <p>Цветовая палитра вдохновлена яркими и контрастными цветами эквалайзера.</p>
+        <div class="palette illustration">
+          <img src="images/base_colors.svg" alt="">
+          <img src="images/neon_colors.svg" alt="">
+        </div>
+        <h2>Цветовые пары</h2>
+        <div class="right_colors illustration">
+          <img src="images/color1.svg" alt="">
+          <img src="images/color2.svg" alt="">
+          <img src="images/color3.svg" alt="">
+          <img src="images/color4.svg" alt="">
+          <img src="images/color5.svg" alt="">
+          <img src="images/color6.svg" alt="">
+        </div>
+        <h2>Недопустимые сочетания цветов</h2>
+        <div class="wrong_colors illustration">
+          <img src="images/color7.svg" alt="">
+          <img src="images/color8.svg" alt="">
+          <img src="images/color9.svg" alt="">
+          <img src="images/color10.svg" alt="">
+        </div>
+      </section>
+
+      <section class="typography">
+          <h1 class="black_txt">Типографика</h1>
+          <div class="fonts illustration">
+            <div class="first_block">
+              <h2>Шрифт</h2>
+              <p class="about_font">Мягкий округлый гротеск с&nbsp;открытой аппертурой используется для контраста с&nbsp;геометричной и&nbsp;резкой графикой.</p>
+            </div>
+            <div class="second_block">
+              <h2>PP Pangram Sans</h2>
+              <p>Tracking</p>
+              <p class="alphabet">Аа Бб Вв Гг Дд Ее Ее Жж Зз Ии Ии Кк&nbsp;Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх&nbsp;Цц Чч Шш Шш Ьь Ьь Ьь Ээ Юю Яя</p>
+            </div>
+            <div class="third_block">
+              <h2>PP Pangram Sans<br>SemiBold</h2>
+              <p>Tracking</p>
+              <p class="alphabet">Аа Бб Вв Гг Дд Ее Ее Жж Зз Ии Ии Кк&nbsp;Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх&nbsp;Цц Чч Шш Шш Ьь Ьь Ьь Ээ Юю Яя</p>
+            </div>
+          </div>
+          <h2 class="black_txt size">Размер</h2>
+          <div class="sizes">
+            <h1 class="black_txt">Заголовок</h1>
+            <h1 class="black_txt">3x</h1>
+            <h2 class="black_txt">Подзаголовок</h2>
+            <h2 class="black_txt">2x</h2>
+            <p class="black_txt">Основной текст</p>
+            <p class="black_txt">x</p>
+          </div>
+      </section>
+
+      <section class="grid">
+        <h1>Сетка</h1>
+        <h2>Построение сетки</h2>
+        <div class="table">
+          <div class="about_grid">
+            <p>4&times;4</p>
+            <p class="space">margin = gutter = 0.025 width</p>
+            <p class="space">Выбор простой сетки связан с&nbsp;применением композиционных схем, в&nbsp;которых главную роль играют фотографии и&nbsp;должны соблюдаться условия, при которых типографика и&nbsp;графика не&nbsp;пересекаются.</p>
+            <p>Текстовые блоки выстраиваются согласно сетке. Допускается нарушение сетки строк при перемещении текстовых блоков, связанных с&nbsp;заголовоком по&nbsp;смыслу. Тогда расстояние между текстовыми блоками определяется высотой строчной буквы заголовка &times; 2.</p>
+          </div>
+          <img src="images/grid.svg" alt="">
+        </div>
+      </section>
+      <section>
+        <h1>Композиционные<br>схемы</h1>
+        <h2 class="topper">Квадратный формат</h2>
+        <p>Допускается масштабирование знака по&nbsp;высоте одной строки.</p>
+        <div class="squares illustration">
+          <img src="images/square1.svg" alt="">
+          <img src="images/square2.svg" alt="">
+          <img src="images/square3.svg" alt="">
+        </div>
+        <h2>Вертикальный формат</h2>
+        <p class="space">Поле для фото или графики<br>занимают 2&ndash;3 строки сверху.</p>
+        <p>Типографическое поле<br>занимает 1&ndash;2 строки снизу</p>
+        <div class="verticals illustration">
+          <img src="images/vertical1.svg" alt="">
+          <img src="images/vertical2.svg" alt="">
+          <img src="images/vertical3.svg" alt="">
+        </div>
+        <h2>Горизонтальный формат</h2>
+        <p class="space">Поле для фото или графики<br>занимают 2&ndash;3 колонки справа.</p>
+        <p class="space">Типографическое поле<br>занимает 1&ndash;2 колонки слева.</p>
+        <p>Поле для графики может<br>занимать 3&nbsp;строки сверху,<br>а&nbsp;типографическое 1&nbsp;снизу.</p>
+      </section>
+
+    </div>
   </body>
 </html>
